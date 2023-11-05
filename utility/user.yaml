@@ -1,0 +1,18 @@
+credentials:
+  usernames:
+    admin:
+      name: Admin
+      password: "$2b$12$DhUntTWecyn0s/nZSFiA.uzkX6hAaF1LmgbbgvUoci7E3GozQOPTW" #admin
+    public_user:
+      name: Guest
+      password: "$2b$12$JkWz1pcM0qGRl0DBUQYNz.5yVJ3SAnFKlIJmU1U1SJqmBz79jh/fC" #abc123
+    bonjovi:
+      name: Bon Jovi
+      password: "$2b$12$QsHxUU1uNKc9IN4QyP39H.VbOZkQSXVl.VUiuWEGwn.a2KI.VXUF." #bonjovirocks
+cookie:
+  expiry_days: 30
+  key: some_cookie_keys
+  name: random_cookie_name
+preauthorized:
+  emails:
+    - bryan@gmail.com

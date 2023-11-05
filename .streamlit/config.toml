@@ -1,0 +1,10 @@
+[server]
+port = 8080
+runOnSave = true
+
+[theme]
+primaryColor = "#66c2a5"
+backgroundColor = "#001F3F"
+secondaryBackgroundColor = "#0083B8"
+textColor = "#DCDCDC"
+font = "sans serif"
