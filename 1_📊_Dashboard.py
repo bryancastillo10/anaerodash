@@ -6,6 +6,7 @@ from dataprocess.data_handling2 import *
 from dataprocess.data_visualization import *
 from utility.auxilliary import *
 from utility.auth import user_auth_system
+from utility.lang import set_language
 
 ##### PAGE SETUP #####
 st.set_page_config(page_title="AnaeroDash APP", page_icon=":clipboard:", layout="wide")
