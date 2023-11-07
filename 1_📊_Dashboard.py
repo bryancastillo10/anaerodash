@@ -41,8 +41,12 @@ if authentication_status:
             ":file_folder: Upload your raw data here", type=(["csv"])
         )
         authenticator.logout("Logout", "sidebar")
-        whitespaces(5)
+        whitespaces(2)
         st.image("utility/images/biogas_plant.png", width=200)
+
+    ## Multi-Language Options
+    target_language = st.sidebar.selectbox("APP Language", ["English (US)","中文（傳統）"])
+
 
     if uploaded_file is not None:
         file_extension = uploaded_file.name.split(".")[-1].lower()
