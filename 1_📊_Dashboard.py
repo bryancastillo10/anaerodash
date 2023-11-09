@@ -28,7 +28,9 @@ if authentication_status == None:
     st.markdown("Prototype_v_1.0 made by Bryan")
 
 if authentication_status:
-    st.title(":green[AnaeroDash APP]  Dedicated for AD System Evaluation :potable_water:")
+    st.title(
+        ":green[AnaeroDash APP]  Dedicated for AD System Evaluation :potable_water:"
+    )
     st.markdown(
         Dashboard_Caption,
         unsafe_allow_html=True,
@@ -45,8 +47,7 @@ if authentication_status:
         st.image("utility/images/biogas_plant.png", width=200)
 
     ## Multi-Language Options
-    target_language = st.sidebar.selectbox("APP Language", ["English (US)","中文（傳統）"])
-
+    target_language = st.sidebar.selectbox("APP Language", ["English (US)", "中文（傳統）"])
 
     if uploaded_file is not None:
         file_extension = uploaded_file.name.split(".")[-1].lower()
@@ -125,9 +126,7 @@ if authentication_status:
             solids_ratio_series(df)
 
     with tabs[4]:
-        st.markdown(
-            Correlation_Caption, unsafe_allow_html=True
-        )
+        st.markdown(Correlation_Caption, unsafe_allow_html=True)
         inf, acid, AD = st.columns(3)
         figures = plot_corr(df)
 
