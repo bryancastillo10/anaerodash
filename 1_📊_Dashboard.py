@@ -6,6 +6,7 @@ from dataprocess.data_handling2 import *
 from dataprocess.data_visualization import *
 from utility.auxilliary import *
 from utility.auth import user_auth_system
+from lang.language import load_bundle
 
 ##### PAGE SETUP #####
 st.set_page_config(page_title="AnaeroDash APP", page_icon=":clipboard:", layout="wide")
@@ -28,9 +29,12 @@ if authentication_status == None:
     st.markdown("Prototype_v_1.0 made by Bryan")
 
 if authentication_status:
-    st.title(
-        ":green[AnaeroDash APP]  Dedicated for AD System Evaluation :potable_water:"
-    )
+    ## Multi-Language Options
+    lang_options = {"English (US)": "en_us", "中文傳統": "zh_tw"}
+    locale = st.sidebar.selectbox("APP Language", options=list(lang_options.keys()))
+    lang_dict = load_bundle(lang_options[locale])
+
+    st.title(lang_dict["title"] + ":potable_water:")
     st.markdown(
         Dashboard_Caption,
         unsafe_allow_html=True,
@@ -45,9 +49,6 @@ if authentication_status:
         authenticator.logout("Logout", "sidebar")
         whitespaces(2)
         st.image("utility/images/biogas_plant.png", width=200)
-
-    ## Multi-Language Options
-    target_language = st.sidebar.selectbox("APP Language", ["English (US)", "中文（傳統）"])
 
     if uploaded_file is not None:
         file_extension = uploaded_file.name.split(".")[-1].lower()
@@ -69,11 +70,11 @@ if authentication_status:
     ######### STREAMLIT LAYOUT #########
     tabs = st.tabs(
         [
-            "Time Series",
-            "Reduction Rates",
-            "Summary Statistics",
-            "Other Parameters",
-            "Correlation",
+            lang_dict["tab1"],  # "Time Series"
+            lang_dict["tab2"],  # "Reduction Rates"
+            lang_dict["tab3"],  # "Summary Statistics"
+            lang_dict["tab4"],  # "Other Parameters"
+            lang_dict["tab5"],  # "Correlation"
         ]
     )
 

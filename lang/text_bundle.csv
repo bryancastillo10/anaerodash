@@ -1,0 +1,14 @@
+locale,key,value
+en_us,title,AnaeroDash APP Dedicated for AD System Evaluation
+zh_tw,title,厭氧表儀 APP 專用AD系統評估
+en_us,tab1,Time Series
+zh_tw,tab1,時間圖
+en_us,tab2,Removal Rate
+zh_tw,tab2,除去率
+en_us,tab3,Summary Statistics
+zh_tw,tab3,總統計
+en_us,tab4,Other Parameters
+zh_tw,tab4,其他參數
+en_us,tab5,Correlation
+zh_tw,tab5,相關性
+
