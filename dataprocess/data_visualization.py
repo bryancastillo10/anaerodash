@@ -63,7 +63,6 @@ def biogas_plot(df, volume):
 
 # COD Reduction Rate Line Plot
 def COD_red(df):
-    st.subheader("COD Reduction Rates (in %)")
     df2 = COD_red_calc(df)
     fig = px.line(
         df2,
@@ -78,7 +77,6 @@ def COD_red(df):
 
 # Solids Reduction Rate Line Plot
 def solids_red(df):
-    st.subheader("Solids Reduction Rates (in %)")
     df2 = solids_red_calc(df)
     fig = px.line(
         df2,

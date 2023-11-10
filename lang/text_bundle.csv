@@ -7,8 +7,10 @@ en_us,upload, Upload your raw data here
 zh_tw,upload, 這裡上傳數據
 en_us,logout, Logout
 zh_tw,logout, 登出
-en_us,title,AnaeroDash APP Dedicated for AD System Evaluation
-zh_tw,title,厭氧表儀 APP 專用AD系統評估
+en_us,title,AnaeroDash APP 
+zh_tw,title,厭氧表儀 APP 
+en_us,title2, Dedicated for AD System Evaluation
+zh_tw,title2, 專用AD系統評估
 en_us,tab1,Time Series
 zh_tw,tab1,時間圖
 en_us,tab2,Removal Rate
@@ -26,7 +28,12 @@ zh_tw,timevis1, 水質
 en_us,timevis2, AD Biogas Production
 zh_tw,timevis2, AD 沼氣生產
 en_us,reductionrate,Reduction Rates in Percentage
-zh_tw,reductionrate,除去率（%）
+zh_tw,reductionrate,除去率（%)
+en_us,codreduction,COD Reduction Rates (in %)
+zh_tw,codreduction,COD 除去率 (%)
+en_us,solidreduction,Solid Reduction Rates (in %)
+zh_tw,solidreduction, 固體除去率 (%)
 en_us,dashcaption,A web application for AD system Evaluation. The complexity of biological processes such as anaerobic digestion system to treat wastes and produce renewable energy is a challenging aspect in the industrial sector. Through this this web application you can explore your data gathered from a two-stage anaerobic digester to evaluate its performance. Thus you can make an effective data-driven decisions to optimize your system.
 zh_tw,dashcaption,用於 AD 系統評估的 Web 應用程式。 生物過程的複雜性，例如處理廢物和生產可再生能源的厭氧消化系統，是工業領域的一個具有挑戰性的方面。 透過此 Web 應用程序，您可以探索從兩級厭氧消化器收集的數據，以評估其性能。 因此，您可以做出有效的數據驅動決策來優化您的系統。
-
+en_us,redcaption,Measuring the reduction rates of CODt CODs TS and VS in anaerobic digestion is critical for process control optimization and environmental compliance. It helps ensure the efficient conversion of organic matter into biogas and high-quality digestate while minimizing the environmental impact of organic waste disposal.
+zh_tw,redcaption, 測量厭氧消化中的 CODt、CODs TS 和 VS 降低率對於製程控制最佳化和環境合規性至關重要。 這個有助於確保有機物有效轉化為沼氣和高品質沼渣，同時最大限度地減少有機廢物處理對環境的影響。

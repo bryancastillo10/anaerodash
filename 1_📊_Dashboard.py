@@ -33,7 +33,7 @@ if authentication_status:
     lang_dict = select_language()
 
     ## Main Caption
-    st.title(lang_dict["title"] + ":potable_water:")
+    st.title(f":green[{lang_dict['title']}] " + lang_dict["title2"] + ":potable_water:")
     st.markdown(
         lang_dict["dashcaption"],
         unsafe_allow_html=True,
@@ -95,10 +95,13 @@ if authentication_status:
 
     with tabs[1]:
         st.markdown(f"<h3>{lang_dict['reductionrate']}</h3>", unsafe_allow_html=True)
+        st.markdown(lang_dict["redcaption"])
         left_column, right_column = st.columns((2, 2))
         with left_column:
+            st.subheader(lang_dict["codreduction"])
             COD_red(df)
         with right_column:
+            st.subheader(lang_dict["solidreduction"])
             solids_red(df)
 
     with tabs[2]:
