@@ -41,12 +41,12 @@ if authentication_status:
 
     ## Sidebar
     with st.sidebar:
-        st.title(f"Welcome {name}!")
-        st.header("Let's Get Started!")
+        st.title(f"{lang_dict['welcome']} {name}!")
+        st.header(lang_dict["start"])
         uploaded_file = st.file_uploader(
-            ":file_folder: Upload your raw data here", type=(["csv"])
+            f":file_folder: {lang_dict['upload']}", type=(["csv"])
         )
-        authenticator.logout("Logout", "sidebar")
+        authenticator.logout(lang_dict["logout"], "sidebar")
         whitespaces(2)
         st.image("utility/images/biogas_plant.png", width=200)
 
@@ -94,7 +94,7 @@ if authentication_status:
             biogas_plot(df, volume)
 
     with tabs[1]:
-        st.markdown(Reduction_Rates_Caption, unsafe_allow_html=True)
+        st.markdown(f"<h3>{lang_dict['reductionrate']}</h3>", unsafe_allow_html=True)
         left_column, right_column = st.columns((2, 2))
         with left_column:
             COD_red(df)

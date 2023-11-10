@@ -6,7 +6,7 @@ def whitespaces(n):
         st.sidebar.markdown("<br>", unsafe_allow_html=True)
 
 
-Reduction_Rates_Caption = """ <h3> Reduction Rates in Percentage</h3>
+Reduction_Rates_Caption = """ 
 <p>Measuring the reduction rates of CODt, CODs, TS, and VS in anaerobic digestion is critical for process control, 
 optimization, and environmental compliance. It helps ensure the efficient conversion of organic matter into biogas and 
 high-quality digestate while minimizing the environmental impact of organic waste disposal.</p>
