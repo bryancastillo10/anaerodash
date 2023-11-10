@@ -34,12 +34,14 @@ if authentication_status:
     locale = st.sidebar.selectbox("APP Language", options=list(lang_options.keys()))
     lang_dict = load_bundle(lang_options[locale])
 
+    ## Main Caption
     st.title(lang_dict["title"] + ":potable_water:")
     st.markdown(
         Dashboard_Caption,
         unsafe_allow_html=True,
     )
 
+    ## Sidebar
     with st.sidebar:
         st.title(f"Welcome {name}!")
         st.header("Let's Get Started!")
