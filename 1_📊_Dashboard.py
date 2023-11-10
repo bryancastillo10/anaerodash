@@ -6,7 +6,7 @@ from dataprocess.data_handling2 import *
 from dataprocess.data_visualization import *
 from utility.auxilliary import *
 from utility.auth import user_auth_system
-from lang.language import load_bundle
+from lang.language import select_language
 
 ##### PAGE SETUP #####
 st.set_page_config(page_title="AnaeroDash APP", page_icon=":clipboard:", layout="wide")
@@ -30,14 +30,12 @@ if authentication_status == None:
 
 if authentication_status:
     ## Multi-Language Options
-    lang_options = {"English (US)": "en_us", "中文傳統": "zh_tw"}
-    locale = st.sidebar.selectbox("APP Language", options=list(lang_options.keys()))
-    lang_dict = load_bundle(lang_options[locale])
+    lang_dict = select_language()
 
     ## Main Caption
     st.title(lang_dict["title"] + ":potable_water:")
     st.markdown(
-        Dashboard_Caption,
+        lang_dict["dashcaption"],
         unsafe_allow_html=True,
     )
 
@@ -81,12 +79,13 @@ if authentication_status:
     )
 
     with tabs[0]:
-        st.markdown("<h3>Time Series Plots</h3>", unsafe_allow_html=True)
+        st.markdown(f"<h3>{lang_dict['timeseries']}</h3>", unsafe_allow_html=True)
         left_column, right_column = st.columns((2, 2))
         with left_column:
+            st.subheader(lang_dict["timevis1"])
             time_series(df)
         with right_column:
-            st.subheader("AD Biogas Production")
+            st.subheader(lang_dict["timevis2"])
             volume = st.radio(
                 "Please choose the reactor volume (in mL)",
                 [6000, 10000, 12000],

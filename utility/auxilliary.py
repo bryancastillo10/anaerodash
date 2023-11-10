@@ -1,16 +1,12 @@
 import streamlit as st
 
+
 def whitespaces(n):
     for _ in range(n):
         st.sidebar.markdown("<br>", unsafe_allow_html=True)
 
 
-Dashboard_Caption = """<p>A web application for AD system Evaluation. The complexity of biological processes such as
-    anaerobic digestion system to treat wastes and produce renewable energy is a challenging aspect in the industrial sector. 
-    Through this this web application, you can explore your data gathered from a two-stage anaerobic digester to
-    evaluate its performance. Thus, you can make an effective data-driven decisions to optimize your system.</p>"""
-
-Reduction_Rates_Caption= """ <h3> Reduction Rates in Percentage</h3>
+Reduction_Rates_Caption = """ <h3> Reduction Rates in Percentage</h3>
 <p>Measuring the reduction rates of CODt, CODs, TS, and VS in anaerobic digestion is critical for process control, 
 optimization, and environmental compliance. It helps ensure the efficient conversion of organic matter into biogas and 
 high-quality digestate while minimizing the environmental impact of organic waste disposal.</p>
@@ -43,6 +39,6 @@ Correlation_Caption = """
     and optimizing the treatment process.</p>
 """
 
-Create_Dataset="""<p>To have a more convenient approach in using the APP, you can create the table
+Create_Dataset = """<p>To have a more convenient approach in using the APP, you can create the table
 using the table provided with the appropriate format. Please strictly follow the data format to be able
 to use the Dashboard App. It should be noted that expression units on the guidelines section.</p>"""

@@ -11,4 +11,12 @@ en_us,tab4,Other Parameters
 zh_tw,tab4,其他參數
 en_us,tab5,Correlation
 zh_tw,tab5,相關性
+en_us,timeseries, Time Series Plots
+zh_tw,timeseries, 時間變化參數
+en_us,timevis1, Water Quality
+zh_tw,timevis1, 水質
+en_us,timevis2, AD Biogas Production
+zh_tw,timevis2, AD 沼氣生產
+en_us,dashcaption,A web application for AD system Evaluation. The complexity of biological processes such as anaerobic digestion system to treat wastes and produce renewable energy is a challenging aspect in the industrial sector. Through this this web application you can explore your data gathered from a two-stage anaerobic digester to evaluate its performance. Thus you can make an effective data-driven decisions to optimize your system.
+zh_tw,dashcaption,用於 AD 系統評估的 Web 應用程式。 生物過程的複雜性，例如處理廢物和生產可再生能源的厭氧消化系統，是工業領域的一個具有挑戰性的方面。 透過此 Web 應用程序，您可以探索從兩級厭氧消化器收集的數據，以評估其性能。 因此，您可以做出有效的數據驅動決策來優化您的系統。
 

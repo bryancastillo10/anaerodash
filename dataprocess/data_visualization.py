@@ -4,13 +4,13 @@ import plotly.graph_objects as go
 
 from dataprocess.data_handling import *
 from dataprocess.data_handling2 import *
+from lang.language import select_language
 
 color_scheme = ["#66c2a5", "#fc8d62", "#a4b3e1", "#e78ac3", "#a6d854"]
 
 
 # Water Quality Time Series Line Plots
 def time_series(df):
-    st.subheader("Water Quality")
     parameters = cont_paramaters(df)
     parameter_query = st.selectbox("Select a parameter:", parameters.columns)
     fig = px.line(
