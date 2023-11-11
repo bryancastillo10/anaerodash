@@ -20,6 +20,8 @@ if authentication_status == None:
     st.markdown("Prototype_v_1.0 made by Bryan")
 
 if authentication_status:
+  ## Multi-Language Options
+  lang_dict = select_language()
   st.title(":green[Some Guidelines]  to use the dashboard app :potable_water:")
 
   with st.sidebar:
