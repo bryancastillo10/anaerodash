@@ -112,7 +112,6 @@ def solids_ratio_series(df):
 
 # Average Nitrogen Grouped Bar Plot
 def Nitrogen(df):
-    st.subheader("Average Nitrogen Concentration")
     df2 = OrganicN(df)
     fig = px.bar(
         df2,

@@ -63,7 +63,7 @@ if authentication_status:
         )
         st.stop()
 
-    with st.expander(" Uploaded Data Preview"):
+    with st.expander(lang_dict['preview']):
         df = load_csv(uploaded_file)
         st.dataframe(df)
 
@@ -105,36 +105,39 @@ if authentication_status:
             solids_red(df)
 
     with tabs[2]:
-        st.markdown(
-            Calculating_HRT,
-            unsafe_allow_html=True,
-        )
+        st.markdown(f"<h3>{lang_dict['stat_title']}</h3>", unsafe_allow_html=True)
+        st.markdown(lang_dict['statcaption'])
         units_choices = ["Influent", "Acid_Tank", "AD"]
-        unit = st.selectbox("Please choose a unit", units_choices)
+        unit = st.selectbox(lang_dict['unitselect'], units_choices)
 
-        hrt = st.slider("Select the HRT(days)", 0, 30, 20, step=5)
+        hrt = st.slider(lang_dict['hrtselect'], 0, 30, 20, step=5)
 
-        if st.button("Show the Summary"):
+        if st.button(lang_dict['showsummary']):
             unit_df = GroupByUnit(df, unit)
             hrt_summary = hrt_interval(unit_df, hrt)
             st.dataframe(hrt_summary, use_container_width=True)
 
     with tabs[3]:
-        st.markdown(
-            Other_Parameters,
-            unsafe_allow_html=True,
-        )
+        st.markdown(f"<h3>{lang_dict['otherparamcap']}</h3>", unsafe_allow_html=True)
+        st.markdown(lang_dict['otherparam'])
+        st.markdown(lang_dict['otherparam2'])
         left_column, right_column = st.columns((2, 2))
         with left_column:
+            st.subheader(lang_dict['nitrogen'])
             Nitrogen(df)
         with right_column:
             solids_ratio_series(df)
 
     with tabs[4]:
-        st.markdown(Correlation_Caption, unsafe_allow_html=True)
-        inf, acid, AD = st.columns(3)
+        st.markdown(f"<h3>{lang_dict['corrtitle']}</h3>", unsafe_allow_html=True)
+        st.markdown(lang_dict['corrcaption'])
         figures = plot_corr(df)
+        left_column, right_column = st.columns((2,2))
+        with left_column:
+            figures[0]
 
-        for i, figure in enumerate(figures):
-            with inf if i < 2 else AD:
-                st.plotly_chart(figure)
+        with right_column:
+            figures[1]    
+
+        with st.container():
+            figures[2]

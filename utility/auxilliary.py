@@ -12,14 +12,14 @@ optimization, and environmental compliance. It helps ensure the efficient conver
 high-quality digestate while minimizing the environmental impact of organic waste disposal.</p>
 
 """
-Calculating_HRT = """<h3>Summary Statistics by HRT</h3>
+Calculating_HRT = """
     <p>Monitoring Hydraulic Retention Time (HRT) in anaerobic digestion is crucial for assessing
     process stability and efficiency, as HRT influences microbial activity and contact time with organic material.
     Calculating the average HRT for specific date intervals is important for performance monitoring, process optimization,
     and troubleshooting. This approach allows operators to detect trends, identify operational issues, and make adjustments
     to maintain consistent and efficient biogas production, ensuring the system's reliability and performance.</p>"""
 
-Other_Parameters = """<h3>Additional Parameters</h3><br>
+Other_Parameters = """
     <p>These parameters were calculated based on the uploaded data. Nitrogen plays a crucial role in the anaerobic
     digestion process by supporting microbial growth and activity, maintaining the appropriate carbon-to-nitrogen ratio, 
     helping to control pH, and ensuring a balanced nutrient supply. Proper management of nitrogen and other nutrients is 
