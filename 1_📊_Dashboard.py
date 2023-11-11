@@ -132,12 +132,16 @@ if authentication_status:
         st.markdown(f"<h3>{lang_dict['corrtitle']}</h3>", unsafe_allow_html=True)
         st.markdown(lang_dict['corrcaption'])
         figures = plot_corr(df)
-        left_column, right_column = st.columns((2,2))
+        left_column, right_column = st.columns((4,3))
         with left_column:
+            st.subheader(lang_dict['corrinf'])
             figures[0]
 
         with right_column:
+            st.subheader(lang_dict['corracid'])
             figures[1]    
 
-        with st.container():
+        left, middle, right = st.columns((2, 5, 2))
+        with middle:
+            st.subheader(lang_dict['corrAD'])
             figures[2]

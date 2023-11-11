@@ -136,11 +136,7 @@ def plot_corr(df):
     inf, acid, AD = correlation_operation(df)
     figures = []
     dfs = [inf, acid, AD]
-    titles = [
-        "Correlation Matrix for Influent",
-        "Correlation Matrix for Acid Tank",
-        "Correlation Matrix for AD",
-    ]
+
     for i, df in enumerate(dfs):
         fig = go.Figure(
             data=go.Heatmap(
@@ -151,7 +147,6 @@ def plot_corr(df):
             )
         )
         fig.update_layout(
-            title=titles[i],
             xaxis_title="Water Quality Parameters",
             yaxis_title="Water Quality Parameters",
         )

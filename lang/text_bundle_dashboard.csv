@@ -49,6 +49,12 @@ en_us,nitrogen,Average Nitrogen Concentration
 zh_tw,nitrogen,平均氮濃度
 en_us,corrtitle,Heatmaps representing Water Quality Correlations
 zh_tw,corrtitle,代表水質相關性的熱圖
+en_us,corrinf, Correlation Matrix for Influent
+zh_tw,corrinf, 進流的相關矩陣
+en_us,corracid, Correlation Matrix for Acid Tank
+zh_tw,corracid, 酸化槽的相關矩陣
+en_us,corrAD, Correlation Matrix for AD
+zh_tw,corrAD, AD的相關矩陣
 en_us,dashcaption,"A web application for AD system Evaluation. The complexity of biological processes such as anaerobic digestion system to treat wastes and produce renewable energy is a challenging aspect in the industrial sector. You can explore your data gathered from a two-stage anaerobic digester to evaluate its performance through this web application. Thus, you can make an effective data-driven decisions to optimize your system."
 zh_tw,dashcaption,厭氧消化系統評估網路應用程式。 厭氧消化系統等生物製程處理廢棄物和生產再生能源的複雜性是工業領域的一個挑戰。 透過此網路應用程序，您可以探索從兩級厭氧消化器收集到的數據，以評估其性能。 因此，您可以做出有效的數據驅動決策，優化您的系統。
 en_us,redcaption,"Measuring the reduction rates of CODt CODs TS and VS in anaerobic digestion is critical for process control optimization and environmental compliance. This helps ensure the efficient conversion of organic matter into biogas and high-quality digestate while minimizing the environmental impact of organic waste disposal."
