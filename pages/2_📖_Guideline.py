@@ -90,46 +90,46 @@ if authentication_status:
           <td>{text['app_2']}</td>
       </tr>
       <tr>
-          <td>Total Chemical Oxygen Demand (in mg/L)</td>
+          <td>{text['tCOD']}</td>
           <td>CODt</td>
-          <td>Integer (Value depends on the wastewater/waste to be treated)</td>
-          <td>Can provide Time Series Plot, Reduction Rates, Correlation with other water quality parameters</td>
+          <td>{text['codvalue']}</td>
+          <td>{text['app_3']}</td>
         </tr>
         <tr>
-          <td>Soluble Chemical Oxygen Demand (in mg/L)</td>
+          <td>{text['sCOD']}</td>
           <td>CODs</td>
-          <td>Integer (Value depends on the wastewater/waste to be treated, should be lower than total COD)</td>
-          <td>Can provide Time Series Plot, Reduction Rates, Correlation with other water quality parameters</td>
+          <td>{text['value_scod']}</td>
+          <td>{text['app_3']}</td>
         </tr>
         <tr>
-          <td>Total Kjeldahl Nitrogen (in mg/L)</td>
+          <td>{text['tkn']}</td>
           <td>TKN</td>
-          <td>Integer (Value depends on the wastewater/waste to be treated)</td>
-          <td>Can provide Time Series Plot, Bar Plot by Overall Average, Used to calculate Organic Nitrogen, Correlation with other water quality parameters</td>
+          <td>{text['codvalue']}</td>
+          <td>{text['app_4']}</td>
         </tr>
         <tr>
-          <td>Ammonia (in mg/L)</td>
+          <td>{text['nh3']}</td>
           <td>NH3</td>
-          <td>Integer (Value depends on the wastewater/waste to be treated, should be lower than TKN)</td>
-          <td>Can provide Time Series Plot, Bar Plot by Overall Average, Used to calculate Organic Nitrogen, Correlation with other water quality parameters</td>
+          <td>{text['value_nh3']}</td>
+          <td>{text['app_4']}</td>
         </tr>
         <tr>
-          <td>Total Solids (in %)</td>
+          <td>{text['ts']}</td>
           <td>TS</td>
-          <td>Float (Value depends on the wastewater/waste to be treated, between 0 to 100 )</td>
-          <td>Can provide Time Series Plot, Reduction Rate, Used to calculate VS/TS Ratio, Correlation with other water quality parameters</td>
+          <td>{text['ts_value']}</td>
+          <td>{text['app_5']}</td>
         </tr>
         <tr>
-          <td>Volatile Solids (in %)</td>
+          <td>{text['vs']}</td>
           <td>VS</td>
-          <td>Float (Value depends on the wastewater/waste to be treated, between 0 to 100, should be lower than TS )</td>
-          <td>Can provide Time Series Plot, Reduction Rate, Used to calculate VS/TS Ratio, Correlation with other water quality parameters</td>
+          <td>{text['vs_value']}</td>
+          <td>{text['app_5']}</td>
         </tr>
         <tr>
-          <td>Raw Biogas Reading (in mL)</td>
+          <td>{text['gas']}</td>
           <td>Biogas</td>
-          <td>Integer (Value depends on the wastewater/waste to be treated)</td>
-          <td>Can provide Time Series Plot per Reactor Volume </td>
+          <td>{text['codvalue']}</td>
+          <td>{text['biogasplot']}</td>
         </tr>
     </table>
   </div> 

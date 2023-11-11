@@ -63,3 +63,35 @@ en_us,orp,Oxidation Reduction Potential (in mV)
 zh_tw,orp,氧化還原電位(mV)
 en_us,orp_value,Integer(should be negative value for AD system)
 zh_tw,orp_value,整數（AD 系統應為負數）
+en_us,app_3,"Can provide Time Series Plot, Reduction Rates, Correlation with other water quality parameters"
+zh_tw,app_3,除了時間序列圖還有除去率、與其他水質參數的相關性
+en_us,codvalue,Integer (Value depends on the wastewater/waste to be treated)
+zh_tw,codvalue,整數（數值取決於要處理的廢水/廢棄物）
+en_us,tCOD,Total Chemical Oxygen Demand (in mg/L)
+zh_tw,tCOD,總化學需氧量 (mg/L)
+en_us,sCOD,Soluble Chemical Oxygen Demand (in mg/L)
+zh_tw,sCOD,可溶性化學需氧量 (mg/L)
+en_us,tkn, Total Kjeldahl Nitrogen (in mg/L)
+zh_tw,tkn, 總凱氏氮 (mg/L)
+en_us,value_scod,"Integer (Value depends on the wastewater/waste to be treated); should be lower than total COD"
+zh_tw,value_scod,整數（數值取決於要處理的廢水/廢棄物）; 應低於總COD
+en_us,app_4,"Can provide Time Series Plot, Bar Plot by Overall Average, Used to calculate Organic Nitrogen, Correlation with other water quality parameters"
+zh_tw,app_4,除了供時間序列圖還有以總體平均值繪製的長條圖、用於計算有機氮、與其他水質參數的相關性
+en_us,value_nh3,"Integer (Value depends on the wastewater/waste to be treated); should be lower than TKN"
+zh_tw,value_nh3,整數（數值取決於要處理的廢水/廢棄物）; 應低於TKN
+en_us,nh3,Ammonia-Nitrogen(in mg N/L)
+zh_tw,nh3,氨氮
+en_us,ts,Total Solids(in %)
+zh_tw,ts,總固體(%)
+en_us,ts_value,"Float (Value depends on the wastewater/waste to be treated, between 0 to 100 )"
+zh_tw,ts_value,浮點數（數值取決於要處理的廢水/廢棄物， 0 到 100 之間）
+en_us,vs,Volatile Solids(in %)
+zh_tw,vs,揮發性固體(%)
+en_us,vs_value,"Float (Value depends on the wastewater/waste to be treated, between 0 to 100, should be lower than TS )"
+zh_tw,vs_value,浮點數（數值取決於要處理的廢水/廢棄物， 0 到 100 之間，應低於TS）
+en_us,gas,Raw Biogas Reading (in mL)
+zh_tw,gas,原沼氣量(mL)
+en_us,app_5,"Can provide Time Series Plot, Reduction Rate, Used to calculate VS/TS Ratio, Correlation with other water quality parameters"
+zh_tw,app_5,除了供時間序列圖還有除去率、用計算 VS/TS 比率、與其他水質參數的相關性
+en_us,biogasplot,Can provide Time Series Plot by Reactor Volume
+zh_tw,biogasplot,按照反應器容積的時間序列圖
