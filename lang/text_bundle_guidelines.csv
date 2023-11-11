@@ -9,3 +9,57 @@ en_us,logout, Logout
 zh_tw,logout, 登出
 en_us,app_intro, APP Introduction
 zh_tw,app_intro, APP 介紹
+en_us,what,What is anaerobic digestion?  
+zh_tw,what,厭氧消是化什麽？
+en_us,who,Who would benefit for this APP?  
+zh_tw,who,使用APP誰對有利?
+en_us,how,How to use this APP?  
+zh_tw,how,使用該APP怎麽?
+en_us,additional,Additional Features: 
+zh_tw,additional,附加功能：
+en_us,par1,"To better understand the purpose of this APP, we should define first the principle of anaerobic digestion. Anaerobic digestion is the process of natural in which microorganisms break down organic materials. In this instance, organic means material that came from or made of plants or animals. Anaerobic digestion process happens in closed spaces wherein there is a significant absence of air (or oxygen in particular). The initials “AD” may refer to the process itself or the built system where anaerobic digestion takes place, also known as a digester. " 
+zh_tw,par1,為了更好地理解這個APP的目的，我們應該先定義厭氧消化的理論。 厭氧消化用微生物分解有機物質的自然過程。 在這種情況下，有機是指來自植物或動物或由植物或動物製成的材料，厭氧消化過程發生在嚴重缺乏空氣（特別無氧）的封閉空間。“AD”可能指的是過程本身還是發生厭氧消化的內建系統也稱為消化器。
+en_us,par2,"Additionally, AD has a key advantage to produce renewable energy called biogas and we can also harvest high-nutrient materials from its digestate which then can be used as a fertilizer. This system is a major prospect to achieve environmental sustainability especially in the wastewater treatment technologies. Comparing to other wastewater treatment processes, this offers cost-effectiveness because it is a natural process without the need of any additional utilities (such as aeration and chemicals)."
+zh_tw,par2,此外，厭氧消化（AD）技術的一個重要優點是可以產生再生能源（沼氣）也可以從沼渣中獲得高營養物質，然後用作肥料。 該系統是實現環境永續發展的重要前景，尤其是在廢水處理技術方面，再與其他廢水處理製程相比，它具有成本效益，因為它是一個自然過程，不需要任何額外的公用設施（如曝氣和化學品）。
+en_us,who_ans1,"Since anaerobic digestion is a biological treatment process there are several challenges it faces when we utilize it for a long period of time. This requires constant maintenance and water quality monitoring for optimization."
+zh_tw,who_ans1,因為厭氧消化是一種生物處理工藝，所以在長期使用時會面臨一些挑戰。這就需要不斷進行維護和水質監測，以實現最佳化。
+en_us,who_ans2,This APP can assist environmental engineers and scientists focused on improving specific AD systems by providing a fast and reliable data dashboard. Key water quality and operational parameters are the main data it can work with.
+zh_tw,who_ans2,"透過提供快速可靠的數據儀表板，此 APP 可為專注於改進特定厭氧消化（AD)系統的環境工程師和科學家提供協助,然後關鍵水質和運作參數是可以使用的主要數據。"
+en_us,how_ans1,"To get started, the table below shows the contents of your raw data. In the case of missing data for a specific date, just leave it blank or input a zero value. The APP would only focus on data points with existing values."
+zh_tw,how_ans1,在本表，你看到所需參數的摘要以及應用程式的功能。 本APP目前是針對雙槽厭氧消化[最常見的反應器配置] 設計的。 APP 開發人員正打算改進其相容性，以支援單槽系統數據，並在未來提供更多功能。
+en_us,how_ans2,"In this table, you’ll find a summary of the required parameters and what are the capabilities of the app. This app is currently designed for a two-stage anaerobic digestion which is the most common reactor configuration. The APP developer is planning to improve its compatibility to support data from one-stage and more features in the future. "
+zh_tw,how_ans2,在本表，你看到所需參數的摘要以及應用程式的功能。 本APP目前是針對雙槽厭氧消化[最常見的反應器配置] 設計的。 APP 開發人員正打算改進其相容性，以支援單槽系統數據，並在未來提供更多功能。
+en_us,features,You can also prepare your data in this APP by clicking on the third page. Multi-lingual feature allows this APP in Chinese (Traditional) version as the developer is currently living in Taiwan. Further languages may be added for the benefit of other users.
+zh_tw,features,你可以點擊第三頁，在本軟體中準備您的數據。 由於開發者目前居住在台灣，因此本軟體的多語言功能允許使用中文（傳統）版本。 為了其他用戶的利益，可能會添加更多語言。
+en_us,param,Parameter
+zh_tw,param,參數
+en_us,date1,Date
+zh_tw,date1, 日期
+en_us,column_form,Column Name Format
+zh_tw,column_form,列名稱格式
+en_us,value_form,Value Format
+zh_tw,value_form,值格式
+en_us,app_cap,APP Capabilities
+zh_tw,app_cap,APP 功能
+en_us,date1,Date
+zh_tw,date1,日期
+en_us,dt,"Datetime (in mm/dd/yyyy format)"
+zh_tw,dt,"日期時間 （使用 mm/dd/yyyy 格式）"
+en_us,app_1,"Used for Time Series Plots, Summary Statistics by HRT"
+zh_tw,app_1, 用於時間序列圖、HRT 總結統計
+en_us,category,Categorical variables for this APP should be
+zh_tw,category,APP的分類變數應為
+en_us,and1,and
+zh_tw,and1,和
+en_us,integerph,Integer(typically from 1 to 14)
+zh_tw,integerph,整數（平常從 1 到 14）
+en_us,app_2,"Can provide Time Series Plot, Correlation with other water quality parameters"
+zh_tw,app_2,可以供時間序列圖、與其他水質參數的相關性
+en_us,temp, Temperature (in &deg;C)
+zh_tw,temp,溫度 (&deg;C)
+en_us,integertemp,Integer(typically from 30 to 60&deg;C)
+zh_tw,integertemp,整數（平常從 30 到 60&deg;C）
+en_us,orp,Oxidation Reduction Potential (in mV)
+zh_tw,orp,氧化還原電位(mV)
+en_us,orp_value,Integer(should be negative value for AD system)
+zh_tw,orp_value,整數（AD 系統應為負數）
