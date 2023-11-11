@@ -1,3 +1,5 @@
 locale,key,value
-en_us,
-zh_tw,
+en_us,guidetitle, Some Guidelines
+zh_tw,guidetitle,一些指南
+en_us,guidetitle2, to use the dashboard app
+zh_tw,guidetitle2, 使用儀表板APP

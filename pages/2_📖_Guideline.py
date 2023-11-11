@@ -1,6 +1,7 @@
 import streamlit as st
 from utility.auxilliary import *
 from utility.auth import user_auth_system
+from lang.language import select_language
 
 st.set_page_config(page_title="Guidelines", page_icon="📖", layout="wide")
 with open("utility/style.css") as style:
@@ -21,8 +22,9 @@ if authentication_status == None:
 
 if authentication_status:
   ## Multi-Language Options
-  lang_dict = select_language()
-  st.title(":green[Some Guidelines]  to use the dashboard app :potable_water:")
+  text = select_language(page_num=2)
+
+  st.title(f":green[{text['guidetitle']}] " + text['guidetitle2'] + ":potable_water:")
 
   with st.sidebar:
       whitespaces(5)

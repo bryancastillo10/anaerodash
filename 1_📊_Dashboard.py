@@ -30,23 +30,23 @@ if authentication_status == None:
 
 if authentication_status:
     ## Multi-Language Options
-    lang_dict = select_language()
-
+    text = select_language(page_num=1)
+ 
     ## Main Caption
-    st.title(f":green[{lang_dict['title']}] " + lang_dict["title2"] + ":potable_water:")
+    st.title(f":green[{text['title']}] " + text["title2"] + ":potable_water:")
     st.markdown(
-        lang_dict["dashcaption"],
+        text["dashcaption"],
         unsafe_allow_html=True,
     )
 
     ## Sidebar
     with st.sidebar:
-        st.title(f"{lang_dict['welcome']} {name}!")
-        st.header(lang_dict["start"])
+        st.title(f"{text['welcome']} {name}!")
+        st.header(text["start"])
         uploaded_file = st.file_uploader(
-            f":file_folder: {lang_dict['upload']}", type=(["csv"])
+            f":file_folder: {text['upload']}", type=(["csv"])
         )
-        authenticator.logout(lang_dict["logout"], "sidebar")
+        authenticator.logout(text["logout"], "sidebar")
         whitespaces(2)
         st.image("utility/images/biogas_plant.png", width=200)
 
@@ -63,29 +63,29 @@ if authentication_status:
         )
         st.stop()
 
-    with st.expander(lang_dict['preview']):
+    with st.expander(text['preview']):
         df = load_csv(uploaded_file)
         st.dataframe(df)
 
     ######### STREAMLIT LAYOUT #########
     tabs = st.tabs(
         [
-            lang_dict["tab1"],  # "Time Series"
-            lang_dict["tab2"],  # "Reduction Rates"
-            lang_dict["tab3"],  # "Summary Statistics"
-            lang_dict["tab4"],  # "Other Parameters"
-            lang_dict["tab5"],  # "Correlation"
+            text["tab1"],  # "Time Series"
+            text["tab2"],  # "Reduction Rates"
+            text["tab3"],  # "Summary Statistics"
+            text["tab4"],  # "Other Parameters"
+            text["tab5"],  # "Correlation"
         ]
     )
 
     with tabs[0]:
-        st.markdown(f"<h3>{lang_dict['timeseries']}</h3>", unsafe_allow_html=True)
+        st.markdown(f"<h3>{text['timeseries']}</h3>", unsafe_allow_html=True)
         left_column, right_column = st.columns((2, 2))
         with left_column:
-            st.subheader(lang_dict["timevis1"])
+            st.subheader(text["timevis1"])
             time_series(df)
         with right_column:
-            st.subheader(lang_dict["timevis2"])
+            st.subheader(text["timevis2"])
             volume = st.radio(
                 "Please choose the reactor volume (in mL)",
                 [6000, 10000, 12000],
@@ -94,54 +94,54 @@ if authentication_status:
             biogas_plot(df, volume)
 
     with tabs[1]:
-        st.markdown(f"<h3>{lang_dict['reductionrate']}</h3>", unsafe_allow_html=True)
-        st.markdown(lang_dict["redcaption"])
+        st.markdown(f"<h3>{text['reductionrate']}</h3>", unsafe_allow_html=True)
+        st.markdown(text["redcaption"])
         left_column, right_column = st.columns((2, 2))
         with left_column:
-            st.subheader(lang_dict["codreduction"])
+            st.subheader(text["codreduction"])
             COD_red(df)
         with right_column:
-            st.subheader(lang_dict["solidreduction"])
+            st.subheader(text["solidreduction"])
             solids_red(df)
 
     with tabs[2]:
-        st.markdown(f"<h3>{lang_dict['stat_title']}</h3>", unsafe_allow_html=True)
-        st.markdown(lang_dict['statcaption'])
+        st.markdown(f"<h3>{text['stat_title']}</h3>", unsafe_allow_html=True)
+        st.markdown(text['statcaption'])
         units_choices = ["Influent", "Acid_Tank", "AD"]
-        unit = st.selectbox(lang_dict['unitselect'], units_choices)
+        unit = st.selectbox(text['unitselect'], units_choices)
 
-        hrt = st.slider(lang_dict['hrtselect'], 0, 30, 20, step=5)
+        hrt = st.slider(text['hrtselect'], 0, 30, 20, step=5)
 
-        if st.button(lang_dict['showsummary']):
+        if st.button(text['showsummary']):
             unit_df = GroupByUnit(df, unit)
             hrt_summary = hrt_interval(unit_df, hrt)
             st.dataframe(hrt_summary, use_container_width=True)
 
     with tabs[3]:
-        st.markdown(f"<h3>{lang_dict['otherparamcap']}</h3>", unsafe_allow_html=True)
-        st.markdown(lang_dict['otherparam'])
-        st.markdown(lang_dict['otherparam2'])
+        st.markdown(f"<h3>{text['otherparamcap']}</h3>", unsafe_allow_html=True)
+        st.markdown(text['otherparam'])
+        st.markdown(text['otherparam2'])
         left_column, right_column = st.columns((2, 2))
         with left_column:
-            st.subheader(lang_dict['nitrogen'])
+            st.subheader(text['nitrogen'])
             Nitrogen(df)
         with right_column:
             solids_ratio_series(df)
 
     with tabs[4]:
-        st.markdown(f"<h3>{lang_dict['corrtitle']}</h3>", unsafe_allow_html=True)
-        st.markdown(lang_dict['corrcaption'])
+        st.markdown(f"<h3>{text['corrtitle']}</h3>", unsafe_allow_html=True)
+        st.markdown(text['corrcaption'])
         figures = plot_corr(df)
         left_column, right_column = st.columns((4,3))
         with left_column:
-            st.subheader(lang_dict['corrinf'])
+            st.subheader(text['corrinf'])
             figures[0]
 
         with right_column:
-            st.subheader(lang_dict['corracid'])
+            st.subheader(text['corracid'])
             figures[1]    
 
         left, middle, right = st.columns((2, 5, 2))
         with middle:
-            st.subheader(lang_dict['corrAD'])
+            st.subheader(text['corrAD'])
             figures[2]
