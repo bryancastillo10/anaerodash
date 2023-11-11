@@ -2,9 +2,9 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-from utility.auxilliary import *
 from dataprocess.data_handling import load_csv
 from utility.auth import user_auth_system
+from utility.auxilliary import whitespaces
 
 st.set_page_config(page_title="Create your Dataset", page_icon="🧪", layout="wide")
 with open("utility/style.css") as style:

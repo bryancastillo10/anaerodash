@@ -4,9 +4,10 @@ import streamlit_authenticator as stauth
 from dataprocess.data_handling import *
 from dataprocess.data_handling2 import *
 from dataprocess.data_visualization import *
-from utility.auxilliary import *
-from utility.auth import user_auth_system
+
 from lang.language import select_language
+from utility.auth import user_auth_system
+from utility.auxilliary import whitespaces
 
 ##### PAGE SETUP #####
 st.set_page_config(page_title="AnaeroDash APP", page_icon=":clipboard:", layout="wide")

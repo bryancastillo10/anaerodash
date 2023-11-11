@@ -1,5 +1,5 @@
 import streamlit as st
-from utility.auxilliary import *
+from utility.auxilliary import whitespaces
 from utility.auth import user_auth_system
 from lang.language import select_language
 
@@ -27,10 +27,10 @@ if authentication_status:
   st.title(f":green[{text['guidetitle']}] " + text['guidetitle2'] + ":potable_water:")
 
   with st.sidebar:
-      whitespaces(5)
-      st.image("utility/images/biogas_plant.png", width=200)
-      whitespaces(2)
-      authenticator.logout("Logout", "sidebar")
+    st.title(text['welcome'])
+
+    whitespaces(5)
+    st.image("utility/images/biogas_plant.png", width=200)
 
   ## HTML Struture ##
   Guide = """
@@ -53,9 +53,9 @@ if authentication_status:
         <th>APP Capabilities</th>
       </tr>
       <tr>
-        <td>Date (in mm/dd/yyyy format)</td>
         <td>Date</td>
-        <td>Datetime </td>
+        <td>Date</td>
+        <td>Datetime (in mm/dd/yyyy format) </td>
         <td>Used for Time Series Plots, Summary Statistics by HRT</td>
       </tr>
       <tr>
@@ -140,5 +140,5 @@ if authentication_status:
       """
 
   ## Streamlit Layout ##
-  st.subheader("A Brief Introduction about the APP")
+  st.subheader(text['app_intro'])
   st.markdown(Guide, unsafe_allow_html=True)
