@@ -6,7 +6,6 @@ cachetools==5.3.2
 certifi==2023.7.22
 charset-normalizer==3.3.2
 click==8.1.7
-colorama==0.4.6
 duckdb==0.9.1
 extra-streamlit-components==0.1.60
 gitdb==4.0.11
@@ -25,7 +24,7 @@ pandas==2.1.2
 Pillow==10.1.0
 plotly==5.18.0
 protobuf==4.25.0
-pyarrow==14.0.0
+pyarrow==14.0.1
 pydeck==0.8.1b0
 Pygments==2.16.1
 PyJWT==2.8.0
