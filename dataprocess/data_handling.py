@@ -6,8 +6,9 @@ import time
 
 # Uploading the raw data
 @st.cache_data
-def load_csv(file):
-    df = pd.read_csv(file)
+def load_csv(uploaded_file):
+    uploaded_file.seek(0)  #reset upload config
+    df = pd.read_csv(uploaded_file)
     df["Date"] = pd.to_datetime(df["Date"], format="%m/%d/%Y").dt.date
     df = df.fillna(0)
     return df
