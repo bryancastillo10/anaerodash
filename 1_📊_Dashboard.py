@@ -55,6 +55,7 @@ if authentication_status:
         file_extension = uploaded_file.name.split(".")[-1].lower()
 
         if file_extension == "csv":
+            uploaded_file.seek(0)  #reset upload config
             load_csv(uploaded_file)
 
     else:
