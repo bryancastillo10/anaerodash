@@ -2,6 +2,10 @@
 <h3 align="center">A Dedicated Web App for AD System Evaluation</h3>
 
 ![Static Badge](https://img.shields.io/badge/AnaeroDash-v_1.1-darkgreen)
-![Static Badge](https://img.shields.io/badge/Python%203.10.12-%233776AB?style=plastic&logo=python&logoColor=%23E6DB3E&color=%231A1D1D)
+![Static Badge](https://img.shields.io/badge/Python_3.10.12-%233776AB?style=plastic&logo=python&logoColor=%23E6DB3D&labelColor=%230072B2&color=%23757979)
 
-A Dashboard Web Application Dedicated for Anaerobic Digestion Treatment Plant Evaluation
+Tools Used:
+
+Description:
+
+Anaerobic Digestion presents a possibility for sustainability, which has emerged as a primary objective in the fields of environmental science and engineering.
