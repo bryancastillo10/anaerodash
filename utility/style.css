@@ -59,6 +59,26 @@ h3 {
     color: #FFFFFF;
   }
 
+/** TABLE CLASS = LEGENDFORMAT**/
+#legendformat {
+    font-family:  sans-serif;
+    border:2px solid #FFFFFF;
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#legendformat td {
+    text-align: center;
+    padding: 8px;
+  }
+  
+  
+#legendformat tr:hover {background-color: #FFCC00;
+color:#181818;}
+
+
 /** PARAGRAPH FORMAT **/ 
 p {
     font-size: 20px;

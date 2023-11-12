@@ -9,3 +9,17 @@ en_us,caption1,"You can make the dataset using the provided table in the suitabl
 zh_tw,caption1,為了更方便地使用該應用程序，您可以使用所提供的表格來建立相應格式的表格。 請嚴格按照資料格式使用 Dashboard APP。 需要注意的是，表達單位在指南部分。
 en_us,download,Download Your Raw Data
 zh_tw,download,下載這裡
+en_us,caption2,Format Guide
+zh_tw,caption2,格式指南
+en_us,dt,Date
+zh_tw,dt,日期
+en_us,reactor,Unit
+zh_tw,reactor,單位
+en_us,others,Other Parameters
+zh_tw,others,其他參數
+en_us,int,Integer
+zh_tw,int,整數
+en_us,negint,Negative Integer
+zh_tw,negint,負整數
+en_us,fl,"Float (eg. 1.0,1.5,...)"
+zh_tw,fl,"浮數 (eg. 1.0,1.5,...)"

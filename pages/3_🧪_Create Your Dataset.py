@@ -100,4 +100,28 @@ if authentication_status:
             f"""{text['download']}""", csv, "file.csv", "text/csv", key="download-csv"
             )
     with right_column:
-        st.markdown("Hello")
+        st.markdown(f"""
+        <h2>{text['caption2']}</h2>
+        <table id="legendformat">
+        <tr>
+        <td>{text['dt']}</td>
+        <td>mm/dd/yyyy</td>
+        </tr>
+        <tr>
+        <td>{text['reactor']}</td>
+        <td>Influent; Acid_Tank; AD</td>
+        </tr>
+        <tr>
+        <td>ORP</td>
+        <td>{text['negint']}</td>
+        </tr>
+        <tr>
+        <td>TS,VS</td>
+        <td>{text['fl']}</td>
+        </tr>
+        <tr>
+        <td>{text['others']}</td>
+        <td>{text['int']}</td>
+        </tr>
+        </table>
+        """,unsafe_allow_html=True)
