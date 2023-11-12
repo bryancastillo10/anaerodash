@@ -97,7 +97,7 @@ if authentication_status:
         csv = convert_df(new_df)
 
         st.download_button(
-            f"""{text['download']}""", csv, "file.csv", "text/csv", key="download-csv"
+            f"""{text['download']}""", csv, "raw_data.csv", "text/csv", key="download-csv"
             )
     with right_column:
         st.markdown(f"""
