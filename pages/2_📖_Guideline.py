@@ -1,5 +1,5 @@
 import streamlit as st
-from utility.auxilliary import whitespaces, Guide
+from utility.auxilliary import whitespaces
 from utility.auth import user_auth_system
 from lang.language import select_language
 
@@ -29,8 +29,10 @@ if authentication_status:
   with st.sidebar:
     st.title(text['welcome'])
 
-    whitespaces(5)
+    whitespaces(2)
     st.image("utility/images/biogas_plant.png", width=200)
+    whitespaces(1)
+    authenticator.logout(text["logout"], "sidebar")
 
   ## Streamlit Layout ##
   st.subheader(text['app_intro'])

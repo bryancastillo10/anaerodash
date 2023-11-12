@@ -4,7 +4,8 @@ import numpy as np
 
 from dataprocess.data_handling import load_csv
 from utility.auth import user_auth_system
-from utility.auxilliary import whitespaces, Create_Dataset
+from utility.auxilliary import whitespaces
+from lang.language import select_language
 
 st.set_page_config(page_title="Create your Dataset", page_icon="🧪", layout="wide")
 with open("utility/style.css") as style:
@@ -24,15 +25,21 @@ if authentication_status == None:
     st.markdown("Prototype_v_1.0 made by Bryan")
 
 if authentication_status:
-    st.title(":green[AnaeroDash APP] Generate your Raw Dataset Here :potable_water:")
+    ## Multi-Language Options
+    text = select_language(page_num=3)
+
+    st.title(f":green[{text['title1']}] " + text['title2'] + ":potable_water:")
 
     with st.sidebar:
-        whitespaces(5)
-        st.image("utility/images/biogas_plant.png", width=200)
         whitespaces(2)
-        authenticator.logout("Logout", "sidebar")
+        st.image("utility/images/biogas_plant.png", width=200)
+        whitespaces(1)
+        authenticator.logout(text["logout"], "sidebar")
 
-    st.markdown(Create_Dataset,unsafe_allow_html=True)
+    st.markdown(f"""
+    
+    <p>{text['caption1']}</p>
+    """,unsafe_allow_html=True)
     sample_df = pd.DataFrame(
         [
             {
@@ -79,16 +86,18 @@ if authentication_status:
             },
         ]
     )
+    ### Streamlit Layout
+    left_column, right_column = st.columns((5,2))
+    with left_column:
+        new_df = st.data_editor(sample_df, num_rows="dynamic")    
+        def convert_df(new_df):
+            return new_df.to_csv(index=False).encode("utf-8")
 
-    new_df = st.data_editor(sample_df, num_rows="dynamic")
 
+        csv = convert_df(new_df)
 
-    def convert_df(new_df):
-        return new_df.to_csv(index=False).encode("utf-8")
-
-
-    csv = convert_df(new_df)
-
-    st.download_button(
-        "Download your Raw Data", csv, "file.csv", "text/csv", key="download-csv"
-    )
+        st.download_button(
+            f"""{text['download']}""", csv, "file.csv", "text/csv", key="download-csv"
+            )
+    with right_column:
+        st.markdown("Hello")

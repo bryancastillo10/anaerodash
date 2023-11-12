@@ -1,1 +1,11 @@
 locale,key,value
+en_us,title1,AnaeroDash APP 
+zh_tw,title1,厭氧表儀 APP 
+en_us,title2,Generate Your Raw Dataset Here
+zh_tw,title2,在這裡產你的原數據集
+en_us,logout, Logout
+zh_tw,logout, 登出
+en_us,caption1,"You can make the dataset using the provided table in the suitable format to have a more convenient way to use the APP. To utilize the Dashboard APP, please adhere precisely to the data format. It is important to read the guidelines section to understand the content."
+zh_tw,caption1,為了更方便地使用該應用程序，您可以使用所提供的表格來建立相應格式的表格。 請嚴格按照資料格式使用 Dashboard APP。 需要注意的是，表達單位在指南部分。
+en_us,download,Download Your Raw Data
+zh_tw,download,下載這裡
