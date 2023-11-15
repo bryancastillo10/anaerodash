@@ -72,7 +72,7 @@ zh_tw,tCOD,總化學需氧量 (mg/L)
 en_us,sCOD,Soluble Chemical Oxygen Demand (in mg/L)
 zh_tw,sCOD,可溶性化學需氧量 (mg/L)
 en_us,tkn, Total Kjeldahl Nitrogen (in mg N/L)
-zh_tw,tkn, 總凱氏氮 (mg/L)
+zh_tw,tkn, 總凱氏氮 (mg N/L)
 en_us,value_scod,"Integer (Value depends on the wastewater/waste to be treated); should be lower than total COD"
 zh_tw,value_scod,整數（數值取決於要處理的廢水/廢棄物）; 應低於總COD
 en_us,app_4,"Can provide Time Series Plot, Bar Plot by Overall Average, Used to calculate Organic Nitrogen, Correlation with other water quality parameters"
@@ -80,7 +80,7 @@ zh_tw,app_4,除了供時間序列圖還有以總體平均值繪製的長條圖�
 en_us,value_nh3,"Integer (Value depends on the wastewater/waste to be treated); should be lower than TKN"
 zh_tw,value_nh3,整數（數值取決於要處理的廢水/廢棄物）; 應低於TKN
 en_us,nh3,Ammonia-Nitrogen(in mg N/L)
-zh_tw,nh3,氨氮
+zh_tw,nh3,氨氮 (mg N/L)
 en_us,ts,Total Solids(in %)
 zh_tw,ts,總固體(%)
 en_us,ts_value,"Float (Value depends on the wastewater/waste to be treated, between 0 to 100 )"
