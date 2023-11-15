@@ -71,7 +71,7 @@ en_us,tCOD,Total Chemical Oxygen Demand (in mg/L)
 zh_tw,tCOD,總化學需氧量 (mg/L)
 en_us,sCOD,Soluble Chemical Oxygen Demand (in mg/L)
 zh_tw,sCOD,可溶性化學需氧量 (mg/L)
-en_us,tkn, Total Kjeldahl Nitrogen (in mg/L)
+en_us,tkn, Total Kjeldahl Nitrogen (in mg N/L)
 zh_tw,tkn, 總凱氏氮 (mg/L)
 en_us,value_scod,"Integer (Value depends on the wastewater/waste to be treated); should be lower than total COD"
 zh_tw,value_scod,整數（數值取決於要處理的廢水/廢棄物）; 應低於總COD
