@@ -17,7 +17,7 @@
 
 ## Description
 
-> Anaerobic Digestion presents a possibility for sustainability, which has emerged as a primary objective in the field of environmental science and engineering. By offering a quick and dependable data analysis and visualization in the AD process, this APP can support our fellow environmentalists in their advocacy for a sustainable environment.
+> Anaerobic Digestion Treatment presents a possibility for sustainability, which has emerged as a primary objective in the field of environmental science and engineering. By offering a quick and dependable data analysis and visualization in the AD process, this APP can support our fellow environmentalists in their advocacy for a sustainable environment.
 
 ---
 
