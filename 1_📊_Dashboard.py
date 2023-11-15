@@ -27,7 +27,7 @@ if authentication_status == None:
         Please login with appropriate username and password to get started.",
         icon="🌐",
     )
-    st.markdown("Prototype_v_1.0 made by Bryan")
+    st.markdown("Prototype_v_1.1")
 
 if authentication_status:
     ## Multi-Language Options
