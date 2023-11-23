@@ -43,7 +43,7 @@
     Take note that env_name can be changed depending on the name of virtual environment you want.
 
     ```console
-        python 3 -m -venv env_name
+        python3 -m -venv env_name
     ```
 
     For Windows:
@@ -75,3 +75,13 @@
     **Username:** public_user
 
     **Password:** abc123
+
+### Key Features
+
+1. Dashboard Application (To instantly visualize and provide additional insights to the user about their AD system based on the uploaded .csv file
+2. Create your Dataset (It is available on the app an online table editor to create your own dataset to be analyzed in this app. It should be noted to strictly follow the guidelines provided in the APP for effective processing)
+3. Internationalization (Since the developer currently lives in Taiwan, he added some feature of providing the APP in Chinese(Traditional) version for the convenience of local viewers/users in Taiwan. )
+
+### Future Plan
+A Machine Learning Algorithm (such as Random Forest Classifier/Support Vector Machine/Reccurent Neural Network/ or any similar models) may be incoroporated to the APP for the prediction of Biogas production which is an important operational parameter of the system. Those predictions could provide some insights to the continuous operation of the AD system.
+
