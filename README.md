@@ -19,6 +19,10 @@
 
 > Anaerobic Digestion Treatment presents a possibility for sustainability, which has emerged as a primary objective in the field of environmental science and engineering. By offering a quick and dependable data analysis and visualization in the AD process, this APP can support our fellow environmentalists in their advocacy for a sustainable environment.
 
+### Demo
+
+![Alt text](utility/images/demo.png)
+
 ---
 
 ### Usage
@@ -83,5 +87,5 @@
 3. Internationalization (Since the developer currently lives in Taiwan, he added some feature of providing the APP in Chinese(Traditional) version for the convenience of local viewers/users in Taiwan. )
 
 ### Future Plan
-A Machine Learning Algorithm (such as Random Forest Classifier/Support Vector Machine/Reccurent Neural Network/ or any similar models) may be incoroporated to the APP for the prediction of Biogas production which is an important operational parameter of the system. Those predictions could provide some insights to the continuous operation of the AD system.
 
+A Machine Learning Algorithm (such as Random Forest Classifier/Support Vector Machine/Reccurent Neural Network/ or any similar models) may be incoroporated to the APP for the prediction of Biogas production which is an important operational parameter of the system. Those predictions could provide some insights to the continuous operation of the AD system.
